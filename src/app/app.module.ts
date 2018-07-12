@@ -8,11 +8,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SecondPage } from '../pages/second/second';
 
+import { AccordionComponent } from '../components/accordion/accordion';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    SecondPage
+    SecondPage,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
