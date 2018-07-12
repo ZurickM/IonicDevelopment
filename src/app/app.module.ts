@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { SecondPage } from '../pages/second/second';
 import { CameraPage } from '../pages/camera/camera';
 import { AccordionComponent } from '../components/accordion/accordion';
+import { InsolePage } from '../pages/insole/insole';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AccordionComponent } from '../components/accordion/accordion';
     HomePage,
     SecondPage,
     AccordionComponent,
-    CameraPage
+    CameraPage,
+    InsolePage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { AccordionComponent } from '../components/accordion/accordion';
     MyApp,
     HomePage,
     SecondPage,
-    CameraPage
+    CameraPage,
+    InsolePage
   ],
   providers: [
     StatusBar,

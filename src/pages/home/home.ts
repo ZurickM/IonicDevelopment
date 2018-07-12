@@ -4,6 +4,7 @@ import { SecondPage } from '../second/second';
 import { CameraPage } from '../camera/camera';
 
 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -15,10 +16,9 @@ nextPage(){
   this.navCtrl.push(SecondPage);
   }
 
+  load(){
+    this.navCtrl.push(CameraPage);
+    }
 
-load(){
-this.navCtrl.push(CameraPage, {
-  val: 'anishirmal'
-    })
   }
-}
+

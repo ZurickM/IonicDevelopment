@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { InsolePage } from '../insole/insole';
 
-/**
- * Generated class for the CameraPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -16,14 +11,31 @@ import { HomePage } from '../home/home';
 })
 export class CameraPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+pushPage;
+formPage;
+InsolePage: any;
+constructor(public navCtrl: NavController, public navParams: NavParams) {
+this.pushPage = HomePage;
+this.formPage = HomePage;
+this.InsolePage= InsolePage;
+    
 
-    console.log(navParams.get('val'));
+console.log(navParams.get('val'));
+
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CameraPage');
-  }
+  nextPage(){
+    this.navCtrl.push(HomePage);
+    }
+
+
+    load3(){
+      this.navCtrl.push(HomePage);
+      }
+
+
+     
+
 
 }
 
