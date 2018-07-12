@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SecondPage } from '../pages/second/second';
-
+import { CameraPage } from '../pages/camera/camera';
 import { AccordionComponent } from '../components/accordion/accordion';
 
 @NgModule({
@@ -15,7 +15,8 @@ import { AccordionComponent } from '../components/accordion/accordion';
     MyApp,
     HomePage,
     SecondPage,
-    AccordionComponent
+    AccordionComponent,
+    CameraPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +26,8 @@ import { AccordionComponent } from '../components/accordion/accordion';
   entryComponents: [
     MyApp,
     HomePage,
-    SecondPage
+    SecondPage,
+    CameraPage
   ],
   providers: [
     StatusBar,
