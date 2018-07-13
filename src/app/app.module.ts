@@ -10,6 +10,7 @@ import { SecondPage } from '../pages/second/second';
 import { CameraPage } from '../pages/camera/camera';
 import { AccordionComponent } from '../components/accordion/accordion';
 import { InsolePage } from '../pages/insole/insole';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { InsolePage } from '../pages/insole/insole';
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen,Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
