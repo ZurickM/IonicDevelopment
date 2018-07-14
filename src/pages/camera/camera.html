@@ -20,12 +20,13 @@
 
     <h1 id="cam">Camera</h1>
 
-   <img id="camera" src="assets/imgs/Random.png">
 
 <button ion-button (click)="takePhoto()">Take Photo</button>
 
-   <button ion-button [navPush]="InsolePage">Insole </button>
+   <button ion-button round id="G"[navPush]="InsolePage">Insole </button>
  
 <p allign="center"><img src="{{ myphoto }}"></p>
+
+<img src= "{{myPhoto}}">
 
 </ion-content>
