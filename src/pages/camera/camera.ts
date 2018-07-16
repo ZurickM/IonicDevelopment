@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { InsolePage } from '../insole/insole';
 import { Camera, CameraOptions } from '@ionic-native/camera';
@@ -16,14 +16,21 @@ pushPage;
 formPage;
 InsolePage: any;
 myphoto: any;
-constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera) {
+showInsole:any;
+constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera, private alertCtrl: AlertController) {
   this.pushPage = HomePage;
   this.formPage = HomePage;
   this.InsolePage= InsolePage;
+  this.showInsole = false;
+  
   
   console.log(navParams.get('val'));
 
   }
+
+
+  
+  
   
   nextPage(){
     this.navCtrl.push(HomePage);
@@ -33,6 +40,14 @@ constructor(public navCtrl: NavController, public navParams: NavParams, private 
     load3(){
       this.navCtrl.push(HomePage);
       }
+
+ 
+
+
+    
+
+
+
 
 
   takePhoto(){
@@ -47,6 +62,7 @@ constructor(public navCtrl: NavController, public navParams: NavParams, private 
    // imageData is either a base64 encoded string or a file URI
    // If it's base64 (DATA_URL):
     this.myphoto = 'data:image/jpeg;base64,' + imageData;
+    this.showInsole = true;
   }, (err) => {
    // Handle error
   });
@@ -54,6 +70,29 @@ constructor(public navCtrl: NavController, public navParams: NavParams, private 
   }
 
 
-}
 
+
+
+  showAlert() {
+    const alert = this.alertCtrl.create({
+    
+      subTitle: 'A removable sole worn in a shoe for warmth, as a deodorizer, or to improve the fit',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
+  
+
+  showAlert2() {
+    const alert = this.alertCtrl.create({
+    
+      subTitle: 'The insole is the inside part of the shoe that runs underneath and supports the buttom of the foot',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
+
+
+
+}
 

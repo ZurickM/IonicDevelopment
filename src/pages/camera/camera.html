@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title></ion-title>
+    <ion-title>Instructions</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,15 +18,34 @@
 <ion-content padding>
 
 
-    <h1 id="cam">Camera</h1>
 
 
-<button ion-button (click)="takePhoto()">Take Photo</button>
-
-   <button ion-button round id="G"[navPush]="InsolePage">Insole </button>
+ 
+<div id="buttona">
+<button ion-button  id="bu" (click)="takePhoto()"> <div id="ram">Check Your Pronation</div></button>
+</div>
+  
  
 <p allign="center"><img src="{{ myphoto }}"></p>
 
 <img src= "{{myPhoto}}">
+
+
+
+    <div class="buttons">
+
+    <button id="al" (click)="showAlert()">  What Is An Insole </button>
+
+  
+
+  
+    <button  id="alt" (click)="showAlert2()">  Where to find Insole  </button>
+  
+
+    </div>
+
+
+
+    <button *ngIf="showInsole" ion-button full id="G"[navPush]="pushPage">Check Your Insole </button>
 
 </ion-content>

@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AlertController } from 'ionic-angular';
 
 
 import { CameraPage } from '../pages/camera/camera';
+import { HomePage } from '../pages/home/home';
+import { SecondPage } from '../pages/second/second';
 
 
 @Component({

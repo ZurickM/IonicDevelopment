@@ -5,13 +5,15 @@ import { CameraPage } from '../camera/camera';
 
 
 
+
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController, ) {}
 nextPage(){
   this.navCtrl.push(SecondPage);
   }
@@ -22,3 +24,6 @@ nextPage(){
 
   }
 
+
+
+  

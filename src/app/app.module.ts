@@ -11,6 +11,8 @@ import { CameraPage } from '../pages/camera/camera';
 import { AccordionComponent } from '../components/accordion/accordion';
 import { InsolePage } from '../pages/insole/insole';
 import { Camera } from '@ionic-native/camera';
+import { AlertController } from 'ionic-angular';
+
 
 @NgModule({
   declarations: [
