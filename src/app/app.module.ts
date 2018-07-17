@@ -11,7 +11,8 @@ import { CameraPage } from '../pages/camera/camera';
 import { AccordionComponent } from '../components/accordion/accordion';
 import { InsolePage } from '../pages/insole/insole';
 import { Camera } from '@ionic-native/camera';
-import { AlertController } from 'ionic-angular';
+import { AngularCropperjsModule } from 'angular-cropperjs'
+
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AlertController } from 'ionic-angular';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularCropperjsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

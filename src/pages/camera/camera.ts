@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { InsolePage } from '../insole/insole';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { AngularCropperjsComponent } from '../../../node_modules/angular-cropperjs';
 
 
 @IonicPage()
@@ -11,19 +12,40 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
   templateUrl: 'camera.html',
 })
 export class CameraPage {
+  @ViewChild('angularCropper') public angularCropper: AngularCropperjsComponent;
+  cropperOptions: any;
+  croppedImage = null;
 
+  myImage = null;
+  scaleValX = 1;
+  scalevalY = 1;
+   
 pushPage;
 formPage;
 InsolePage: any;
 myphoto: any;
 showInsole:any;
 constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera, private alertCtrl: AlertController) {
+
+
+  
   this.pushPage = HomePage;
   this.formPage = HomePage;
   this.InsolePage= InsolePage;
-  this.showInsole = false;
+  this.showInsole = true;
   
+  this.cropperOptions = {
+    dragMode: 'crop',
+    aspectRatio: .5,
+    autoCrop: true,
+    movable: true,
+    zoomable: true,
+    scalable: true,
+    autoCropArea: .8,
+  };
   
+
+
   console.log(navParams.get('val'));
 
   }
@@ -94,5 +116,74 @@ constructor(public navCtrl: NavController, public navParams: NavParams, private 
 
 
 
-}
+
+  //Image Cropping Stuff//
+
+
+
+  captureImage() {
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE,
+      sourceType: this.camera.PictureSourceType.CAMERA
+    }
+
+    this.camera.getPicture(options).then((imageData) => {
+      this.myImage = 'data:image/jpeg;base64,' + imageData;
+    });
+  }
+
+
+
+
+    reset() {
+      this.angularCropper.cropper.reset();
+    }
+   
+    clear() {
+      this.angularCropper.cropper.clear();
+    }
+   
+    rotate() {
+      this.angularCropper.cropper.rotate(90);
+    }
+  
+
+    zoom(zoomIn: boolean) {
+      let factor = zoomIn ? 0.1 : -0.1;
+      this.angularCropper.cropper.zoom(factor);
+    }
+  
+    
+    scaleX() {
+      this.scaleValX = this.scaleValX * -1;
+      this.angularCropper.cropper.scaleX(this.scaleValX);
+    }
+   
+    scaleY() {
+      this.scalevalY = this.scalevalY * 1;
+      this.angularCropper.cropper.scaleY(this.scaleY);
+    }
+
+    move(x, y) {
+      this.angularCropper.cropper.move(x, y);
+    }
+   
+    save() {
+      let croppedImgB64String: string = this.angularCropper.cropper.getCroppedCanvas().toDataURL('image/jpeg', (100 / 100));
+      this.croppedImage = croppedImgB64String;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 

@@ -13,7 +13,7 @@
   background-color: #F4FF8B;
   height: 220px;
   width: 200px;
-  
+  border-radius: 15px
 }
 
 
@@ -40,6 +40,7 @@
     color:white;
     width:140px;
     white-space:pre;
+    border-radius: 18px
 
 
     
@@ -55,7 +56,15 @@
     width:140px;
     white-space:pre;
     text-align: center;
+    border-radius: 18px
+
+}
 
 
-
+#img{
+    max-width:40%;
+    max-height:8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
