@@ -5,11 +5,13 @@ import { HomePage } from '../home/home';
 import { SecondPage } from '../second/second';
 
 
+
 @NgModule({
   declarations: [
     CameraPage,
     HomePage,
-    SecondPage
+    SecondPage,
+    
     
   ],
   imports: [

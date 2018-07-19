@@ -1,5 +1,5 @@
 page-home {
-
+    background-color: white ;
 }
 
 #firstpage{
@@ -7,7 +7,7 @@ page-home {
 }
 
 
-#img2{
+#img10{
     height: 300px;
     width: 300px;
 
@@ -19,12 +19,20 @@ page-home {
 }
 
 
-#head{
-    background-color: #57A5CA;
+#head2{
+    background-color: #CEFF00;
 }
 
 
 #button{
-    transform: translate(31px, 0px);
-    
+    display: block;
+    text-align: center;
+    background-color: #446F8B;
+    font-size: 25px;
+    color: white;
+    margin: 20px auto;
+}
+
+#bodycolor7{
+    background-color: white;
 }

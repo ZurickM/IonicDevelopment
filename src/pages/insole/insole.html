@@ -15,42 +15,31 @@
 
 <ion-content padding>
 
-
-  <ion-card>
-    <ion-card-header>
-      Header
-    </ion-card-header>
-    <ion-card-content>
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-    </ion-card-content>
-  </ion-card>
-
-
-
-  <ion-card>
-    <ion-card-header>
-      Header
-    </ion-card-header>
-    <ion-card-content>
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-    </ion-card-content>
-  </ion-card>
-
-
-
-  <ion-card>
-    <ion-card-header>
-      Header
-    </ion-card-header>
-    <ion-card-content>
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-    </ion-card-content>
-  </ion-card>
-
+ 
+  <img id="outline"  src="./assets/imgs/background.png" alt="">
 
   
+  <button id="A">A</button>
 
-    <button ion-button [navPush]="Home"> Check Your Pronation</button>
+  <button id="B"  [navPush]="Home">B</button>
+
+  <button id="C">C</button>
+
+  <button id="D">D</button>
+
+  <button id="E">E</button>
 
 
+  <button ion-button (click)="nextPage()">OverPronation Page</button>
+
+
+  <button ion-button (click)="nextPageP()">UnderPronation Page</button>
+
+
+
+  <button ion-button full id="pro" [navPush]="Home"> Normal Pronation</button>
+
+
+
+   
 </ion-content>

@@ -22,6 +22,7 @@
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
     "@ionic-native/camera": "^4.9.1",
+    "@ionic-native/camera-preview": "^4.9.2",
     "@ionic-native/core": "4.9.1",
     "@ionic-native/local-notifications": "^4.9.2",
     "@ionic-native/splash-screen": "4.9.1",
@@ -31,7 +32,8 @@
     "angular-cropperjs": "^0.1.5",
     "cordova-android": "7.0.0",
     "cordova-ios": "4.5.4",
-    "cordova-plugin-camera": "^4.0.3",
+    "cordova-plugin-badge": "^0.8.7",
+    "cordova-plugin-camera-preview": "^0.10.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.19",
@@ -56,7 +58,7 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
-      "cordova-plugin-camera": {}
+      "cordova-plugin-camera-preview": {}
     },
     "platforms": [
       "ios",
