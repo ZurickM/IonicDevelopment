@@ -19,25 +19,22 @@
   <img id="outline"  src="./assets/imgs/background.png" alt="">
 
   
-  <button id="A">A</button>
+  <button ion-button (click)="ifButton('A')" id="A">A</button>
 
-  <button id="B"  [navPush]="Home">B</button>
+  <button ion-button (click)="ifButton('B')" id="B"  >B</button>
 
-  <button id="C">C</button>
+  <button ion-button (click)="ifButton('C')" id="C">C</button>
 
-  <button id="D">D</button>
+  <button ion-button (click)="ifButton('D')" id="D">D</button>
 
-  <button id="E">E</button>
-
-
-  <button ion-button (click)="nextPage()">OverPronation Page</button>
+  <button ion-button (click)="ifButton('E')" id="E">E</button>
 
 
-  <button ion-button (click)="nextPageP()">UnderPronation Page</button>
+  <button ion-button *ngIf="pageone" (click)="nextPage()">OverPronation Page</button>
 
+  <button ion-button *ngIf="pagetwo" (click)="nextPageP()">UnderPronation Page</button>
 
-
-  <button ion-button full id="pro" [navPush]="Home"> Normal Pronation</button>
+  <button ion-button  *ngIf="pagethree" full id="pro" [navPush]="Home"> Normal Pronation</button>
 
 
 
