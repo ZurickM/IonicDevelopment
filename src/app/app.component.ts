@@ -9,13 +9,14 @@ import { SecondPage } from '../pages/second/second';
 import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
 import { ShoeshowPage } from '../pages/shoeshow/shoeshow';
 import { Camera } from '../../node_modules/@ionic-native/camera';
+import { ProinfoPage } from '../pages/proinfo/proinfo';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = CameraPage;
+  rootPage:any = ProinfoPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
