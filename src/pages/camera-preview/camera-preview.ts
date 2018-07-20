@@ -18,8 +18,12 @@ import { InsolePage } from '../insole/insole';
   templateUrl: 'camera-preview.html',
 })
 export class CameraPreviewPage {
-  public photos: any;
   public base64Image: string;
+
+  
+
+  //public photos: any;
+
   myphoto: any;
 
   imageURL
@@ -28,8 +32,23 @@ export class CameraPreviewPage {
   
   }
 
+  takePicture(){
 
-  ionViewDidLoad() {
+    this.camera.getPicture({
+      sourceType: this.camera.PictureSourceType.CAMERA,
+        destinationType: this.camera.DestinationType.DATA_URL,
+        encodingType: this.camera.EncodingType.JPEG,
+        mediaType: this.camera.MediaType.PICTURE
+  //      targetWidth: 1000,
+  //      targetHeight: 1000
+    }).then((imageData) => {
+      // imageData is a base64 encoded string
+        this.base64Image = "data:image/jpeg;base64," + imageData;
+    }, (err) => {
+        console.log(err);
+    });
+
+ /* ionViewDidLoad() {
     console.log('load preview')
     this.platform.ready().then(() => {
       const cameraPreviewOpts: CameraPreviewOptions = {
@@ -54,9 +73,9 @@ export class CameraPreviewPage {
         });
 
     })
-  }
+ }*/
 
-  ionViewWillLeave() {
+ /* ionViewWillLeave() {
     console.log('leave')
     this.cameraPreview.stopCamera();
   }
@@ -87,5 +106,6 @@ export class CameraPreviewPage {
  
 
 
-
+*/
+}
 }

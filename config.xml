@@ -93,4 +93,5 @@
     <allow-navigation href="http://169.254.213.43:8100" />
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="7.0.0" />
+    <allow-navigation href="http://192.168.0.17:8100" />
 </widget>

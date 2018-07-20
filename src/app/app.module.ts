@@ -41,6 +41,7 @@ import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
     PageshoePage
     
     
+    
   ],
   imports: [
     BrowserModule,
