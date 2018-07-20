@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
 import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
+import { Camera, CameraOptions, CameraPopoverOptions } from '@ionic-native/camera';
 
 import { InsolePage } from '../insole/insole';
 /**
@@ -13,11 +14,19 @@ import { InsolePage } from '../insole/insole';
 
 @Component({
   selector: 'page-camera-preview',
+  providers: [Camera],
   templateUrl: 'camera-preview.html',
 })
 export class CameraPreviewPage {
+  public photos: any;
+  public base64Image: string;
+  myphoto: any;
 
-  constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController) { }
+  imageURL
+  constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController, private camera: Camera) { 
+    
+  
+  }
 
 
   ionViewDidLoad() {
@@ -47,17 +56,35 @@ export class CameraPreviewPage {
     })
   }
 
-  ionViewWillLeave(){
+  ionViewWillLeave() {
     console.log('leave')
     this.cameraPreview.stopCamera();
   }
 
 
 
-  loadP(){
+  loadP() {
     this.navCtrl.push(InsolePage);
+  }
+  takePhoto(){
+    const options: CameraOptions = {
+      quality: 70,
+      destinationType: this.camera.DestinationType.FILE_URI,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
     }
+    
+    this.camera.getPicture(options).then((imageData) => {
+     // imageData is either a base64 encoded string or a file URI
+     // If it's base64 (DATA_URL):
+     let base64Image = 'data:image/jpeg;base64,' + imageData;
+    }, (err) => {
+     // Handle error
+    });
+  }
 
+
+ 
 
 
 

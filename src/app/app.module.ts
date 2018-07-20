@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import {Camera} from '@ionic-native/camera';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -16,10 +17,11 @@ import { PageshoePage } from '../pages/pageshoe/pageshoe';
 
 import { AccordionComponent } from '../components/accordion/accordion';
 import { InsolePage } from '../pages/insole/insole';
-import { Camera } from '@ionic-native/camera';
 import { AngularCropperjsModule } from 'angular-cropperjs'
 import { CameraPreviewPage } from '../pages/camera-preview/camera-preview';
 import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
+
+
 
 
 
@@ -62,7 +64,7 @@ import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen, Camera,
     CameraPreview,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
