@@ -11,14 +11,14 @@ page-insole {
 
 
 #A{
-    height: 90px;
-    width: 50px;
+    height: 80px;
+    width: 40px;
     background-color: deepskyblue;
     margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(7px,-120px);
+    transform: translate(40px,-120px);
     background: transparent;
     font-size: 30px;
     color: black;
@@ -88,9 +88,12 @@ page-insole {
 }
 
 
-#pro{
+.pro{
     position: absolute;
 bottom: 0px;
+display: inline-block;
+position: absolute;
+    top: 83%;
 }
 
 
@@ -99,5 +102,17 @@ bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 200px;
+}
+
+
+#question{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    line-height: 102px;
+    background-color: #446F8B;
+    font-size: 40px;
+    float: right;
+    transform: translate(0px, -450px)
 }
 

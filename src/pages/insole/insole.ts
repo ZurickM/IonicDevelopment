@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 
 import { ProinfoPage } from '../proinfo/proinfo';
 import { UnderproPage } from '../underpro/underpro';
 import { analyzeAndValidateNgModules } from '../../../node_modules/@angular/compiler';
+import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
+
 /**
  * Generated class for the InsolePage page.
  *
@@ -22,8 +24,19 @@ export class InsolePage {
   pagetwo = false;
   pagethree = false;
   selected = [];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, cameraPreview: CameraPreview) {
     this.Home = HomePage;
+  }
+
+
+
+  showAlert20() {
+    const alert = this.alertCtrl.create({
+    
+      subTitle: 'Tap two buttons that has your shoe imprint on it',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
   nextPage(){

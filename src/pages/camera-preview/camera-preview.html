@@ -1,9 +1,3 @@
-<!--
-  Generated template for the CameraPreviewPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar >
@@ -16,11 +10,20 @@
 <ion-content padding>
     <img id="outline" src="./assets/imgs/background.png" alt="">
 
+    <!-- <ion-card>
+        <ion-card-content>
+          Latest Picture:
+          <img [src]=“base64Image” *ngIf=“base64Image” />
+        </ion-card-content>
+      </ion-card>
+       <button ion-button (click)=“takePicture()“>Take a Picture</button> -->
 
+    <img src="{{imageURL}}">
+    <button ion-button (click)="takePicture()">Take Picture</button>
 
-    <button ion-button (click)="takePhoto()" >Take Photo
-      </button>
-<p> <img src= "{{ myphoto }}"></p>
     <button ion-button (click)="loadP()">Next Page</button>
 
 </ion-content>
+
+
+
