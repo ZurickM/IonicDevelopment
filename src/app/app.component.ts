@@ -11,13 +11,14 @@ import { ShoeshowPage } from '../pages/shoeshow/shoeshow';
 import { Camera } from '../../node_modules/@ionic-native/camera';
 import { ProinfoPage } from '../pages/proinfo/proinfo';
 import { InsolePage } from '../pages/insole/insole';
+import { HomePage } from '../pages/home/home';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = InsolePage;
+  rootPage:any = CameraPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

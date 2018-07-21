@@ -13,73 +13,43 @@
   
 
 
-  <div id="buttona">
-    <button id="bu" (click)="captureImage()" *ngIf="!myImage">
-      <div id="ram">Capture Image</div>
-    </button>
+
+
+
+<div id="buttona">
+  <button id="bu" (click)="captureImage()">
+  <img src="./assets/imgs/Icon.png">
+<div id="tempdiv">Check Your Pronation</div></button>
+ </div>
+
+ <p id="invisible">A</p>
+
+ <div id="trophysize" >
+  <button id="trophybutton">
+  <img src="./assets/imgs/Trophy.png"><div id="contestext"> Contest</div>
+  </button>
   </div>
 
-  <img id="img2" src="./assets/imgs/Icon.png">
+<div id="sizebut">
+<button id="probu"  (click)="showAlert3()">
+<img src="./assets/imgs/Pronation.png"><div id="divpronation">What is pronation?</div>
+</button>
+</div>
 
- 
+<p id="invisible">A</p>
 
-
- 
-
-
-
-  <div class="buttons">
-
-    <button id="al" (click)="showAlert3()">
-      <div id="shoetxt">What's Pronation?</div>
-    </button>
-
+<div id="whereinsole">
+<button id="shoerunimg" (click)="showAlert2()">
+<img src="./assets/imgs/shoerun.png"><div id="shoerunbutton">Where to find insole</div>
+</button>
+</div>
 
 
-
-
-
-    <button id="alt" (click)="showAlert2()">
-      <div id="insoletxt">Our monthly contest</div>
-    </button>
-
-
-
-
-    <button id="alerts" (click)="showAlert()">
-      <div id="shoetxt">What is an insole</div>
-    </button>
-
-
-
-    <button id="alerts1" (click)="showAlert2()">
-      <div id="shoetxt">Where to find insole</div>
-    </button>
-
-    <img id="placement" src="./assets/imgs/Trophy.png">
-
-    <img id="place" src="./assets/imgs/Pronation.png">
-    
-    <img id="shoerightpos" src="./assets/imgs/Shoerun.png">
-
-
-    <img id="shoerightpos2" src="./assets/imgs/Insoleright.png">
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
+<div id="whatinsole">
+<button id="insolebuttonn" (click)="showAlert()">
+<img src="./assets/imgs/insole.png"><div id="insoletextt">What is an insole</div>
+</button>
+</div>
 
 
 

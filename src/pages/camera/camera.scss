@@ -1,30 +1,57 @@
 page-camera {
   
-        background-color: lightblue;
+        background-color: white;
     
 }
 
 
- #cam{
-     text-align: center;
- }
+
+#invisible{
+    text-align: center;
+    background-color: white;
+    color: white;
+}
 
 
 #bu{
   text-align: center;
   background-color: #446F8B;
   height: 220px;
-  width: 280px;
+  width: 260px;
   border-radius: 15px;
-  transform: translate(0px,20px)
+  text-align: center;
+  padding: 70px;
+  
 }
 
 
-#ram{
-    transform: translate(0px, -70px);
-    color: black;
-    font-size: 15px;
+#probu{
+    background-color: #446F8B;
+    height: 130px;
+    width: 42%;
+    border-radius: 15px;
+    padding: 40px;
+    margin-left: 10px;
+    display: inline-block;
+    top: 50%;
+
 }
+
+
+
+
+
+#tempdiv{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+
 
 
 #buttona{
@@ -32,8 +59,65 @@ page-camera {
  
 }
 
+#divpronation{
+    position: absolute;
+    left: 0;
+    top: 53%;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    color: white;
+    margin-left: 19px;
+    right: 0;
+}
+
+#trophybutton{
+    background-color: #446F8B;
+    height: 130px;
+    width: 43%;
+    border-radius: 15px;
+    padding: 40px;
+    margin-right: 10px;
+    float: right;
+    top: 50%;
+}
+
+#contestext{
+    position: absolute;
+    left: 0;
+    top: 53%;
+    width: 100%;
+    text-align: right;
+    font-size: 13px;
+    color: white;
+    margin-left: -54px;
+    right: 0;
+ 
+}
 
 
+#shoerunimg{
+    background-color: #446F8B;
+    height: 130px;
+    width: 43%;
+    border-radius: 15px;
+    padding: 40px;
+    margin-right: 10px;
+    float: right;
+    top: 50%;
+}
+
+#shoerunbutton{
+    position: absolute;
+    left: 0;
+    top: 84%;
+    width: 100%;
+    text-align: right;
+    font-size: 13px;
+    color: white;
+    margin-left: -18px;
+    right: 0;
+}
 
 #al{
     float: left;
@@ -46,6 +130,30 @@ page-camera {
 
 
 }
+
+
+#insolebuttonn{
+    background-color: #446F8B;
+    height: 130px;
+    width: 42%;
+    border-radius: 15px;
+    padding: 40px;
+    margin-left: 10px;
+    display: inline-block
+}
+
+#insoletextt{
+    position: absolute;
+    left: 0;
+    top: 84%;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    color: white;
+    margin-left: 25px;
+    right: 0;
+}
+
 
 #alt{
     float: right;
@@ -89,83 +197,4 @@ page-camera {
 
 }
 
-
-#cont{
-    background-color: #3D3F3C;
-}
-
-#title{
-    background-color: #3D3F3C;
-}
-
-
-#img2{
-    max-width:30%;
-    max-height:20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(0px, -140px)
-}
-
-
-#shoeimg1{
-    max-width:27%;
-    max-height:20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(110px,30px)
-}
-
-
-#insoleimg1{
-    max-width:15%;
-    max-height:15%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(-110px,-30px)
-}
-
-#insoletxt{
-    transform: translate(0px,-21px)
-}
-
-#shoetxt{
-    transform: translate(0px,-21px);
-}
-
-
-#placement{
-    right: 65px;
-   position: absolute;
-    height: 7%;
-    transform: translateY(60px)
-   
-}
-
-#place{
-    right: 260px;
-    position: absolute;
-     height: 7%;
-     transform: translateY(60px)
-}
-
-
-#shoerightpos{
-    right: 53px;
-    position: absolute;
-     height: 7%;
-     transform: translateY( 194px)
-}
-
-
-
-#shoerightpos2{
-    right: 275px;
-    position: absolute;
-     height: 7%;
-     transform: translateY( 194px)
-}
 
