@@ -7,7 +7,8 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title id="headd">Pronation Info</ion-title>
+    <ion-title id="headd" >Pronation Info</ion-title>
+    <button ion-button round (click)="showAlert20()" id="navbutton">?</button>
   </ion-navbar>
 
 </ion-header>
@@ -16,9 +17,12 @@
 <ion-content padding>
 
  
+
   <img id="outline"  src="./assets/imgs/background.png" alt="">
 
   
+
+
   <button ion-button (click)="ifButton('A')" id="A">A</button>
 
   <button ion-button (click)="ifButton('B')" id="B"  >B</button>
@@ -30,11 +34,11 @@
   <button ion-button (click)="ifButton('E')" id="E">E</button>
 
 
-  <button ion-button *ngIf="pageone" (click)="nextPage()">OverPronation Page</button>
+  <button ion-button round *ngIf="pageone" class="pro"(click)="nextPage()">OverPronation Page</button>
 
-  <button ion-button *ngIf="pagetwo" (click)="nextPageP()">UnderPronation Page</button>
+  <button ion-button round *ngIf="pagetwo" class="pro"(click)="nextPageP()">UnderPronation Page</button>
 
-  <button ion-button  *ngIf="pagethree" full id="pro" [navPush]="Home"> Normal Pronation</button>
+  <button ion-button round *ngIf="pagethree"  class="pro" [navPush]="Home"> Normal Pronation</button>
 
 
 

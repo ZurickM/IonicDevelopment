@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
 import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
-import { Camera, CameraOptions, CameraPopoverOptions } from '@ionic-native/camera';
+
 
 import { InsolePage } from '../insole/insole';
 /**
@@ -14,7 +14,7 @@ import { InsolePage } from '../insole/insole';
 
 @Component({
   selector: 'page-camera-preview',
-  providers: [Camera],
+  providers: [],
   templateUrl: 'camera-preview.html',
 })
 export class CameraPreviewPage {
@@ -26,29 +26,13 @@ export class CameraPreviewPage {
 
   myphoto: any;
 
-  imageURL
-  constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController, private camera: Camera) { 
+  imageURL;
+  constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController, ) { 
     
   
   }
 
-  takePicture(){
-
-    this.camera.getPicture({
-      sourceType: this.camera.PictureSourceType.CAMERA,
-        destinationType: this.camera.DestinationType.DATA_URL,
-        encodingType: this.camera.EncodingType.JPEG,
-        mediaType: this.camera.MediaType.PICTURE
-  //      targetWidth: 1000,
-  //      targetHeight: 1000
-    }).then((imageData) => {
-      // imageData is a base64 encoded string
-        this.base64Image = "data:image/jpeg;base64," + imageData;
-    }, (err) => {
-        console.log(err);
-    });
-
- /* ionViewDidLoad() {
+  ionViewDidLoad() {
     console.log('load preview')
     this.platform.ready().then(() => {
       const cameraPreviewOpts: CameraPreviewOptions = {
@@ -65,7 +49,8 @@ export class CameraPreviewPage {
 
       this.cameraPreview.startCamera(cameraPreviewOpts).then(
         (res) => {
-          console.log('camera on')
+          console.log('camera on');
+          console.log(res);
         },
         (err) => {
           console.log('camera error')
@@ -73,39 +58,22 @@ export class CameraPreviewPage {
         });
 
     })
- }*/
+ }
 
- /* ionViewWillLeave() {
+  ionViewWillLeave() {
     console.log('leave')
     this.cameraPreview.stopCamera();
   }
 
-
+  takePicture(){
+    this.cameraPreview.takePicture().then((data)=>{
+      this.imageURL = 'data:image/jpeg;base64,' + data;
+    })
+  }
 
   loadP() {
     this.navCtrl.push(InsolePage);
   }
-  takePhoto(){
-    const options: CameraOptions = {
-      quality: 70,
-      destinationType: this.camera.DestinationType.FILE_URI,
-      encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE
-    }
-    
-    this.camera.getPicture(options).then((imageData) => {
-     // imageData is either a base64 encoded string or a file URI
-     // If it's base64 (DATA_URL):
-     let base64Image = 'data:image/jpeg;base64,' + imageData;
-    }, (err) => {
-     // Handle error
-    });
-  }
-
-
- 
-
-
-*/
 }
-}
+
+

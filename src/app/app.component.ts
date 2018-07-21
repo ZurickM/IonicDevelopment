@@ -10,13 +10,14 @@ import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
 import { ShoeshowPage } from '../pages/shoeshow/shoeshow';
 import { Camera } from '../../node_modules/@ionic-native/camera';
 import { ProinfoPage } from '../pages/proinfo/proinfo';
+import { InsolePage } from '../pages/insole/insole';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = CameraPage;
+  rootPage:any = InsolePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

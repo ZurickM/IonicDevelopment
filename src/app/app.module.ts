@@ -26,6 +26,7 @@ import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -66,7 +67,7 @@ import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
   providers: [
     StatusBar,
     SplashScreen, Camera,
-    CameraPreview,
+    CameraPreview, 
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

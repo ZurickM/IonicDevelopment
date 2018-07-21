@@ -93,5 +93,8 @@
     <allow-navigation href="http://169.254.213.43:8100" />
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
+    <preference name="orientation" value="portrait" />
+    <allow-navigation href="http://169.254.190.73:8100" />
     <allow-navigation href="http://192.168.0.17:8100" />
 </widget>

@@ -25,8 +25,9 @@ formPage;
 InsolePage: any;
 myphoto: any;
 showInsole:any;
-constructor(public navCtrl: NavController, public navParams: NavParams,private alertCtrl: AlertController) {
+constructor(public navCtrl: NavController, public navParams: NavParams,private alertCtrl: AlertController, ) {
 
+ 
 
   
   this.pushPage = HomePage;
@@ -43,6 +44,7 @@ constructor(public navCtrl: NavController, public navParams: NavParams,private a
     scalable: true,
     autoCropArea: .8,
   };
+  
   
 
 
