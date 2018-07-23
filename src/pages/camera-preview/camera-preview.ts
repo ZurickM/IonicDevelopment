@@ -25,12 +25,14 @@ export class CameraPreviewPage {
   //public photos: any;
 
   myphoto: any;
-
+  showInsole: any;
   imageURL;
+
   constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController, ) { 
-    
+    this.showInsole = false;
   
   }
+
 
   ionViewDidLoad() {
     console.log('load preview')
@@ -68,12 +70,16 @@ export class CameraPreviewPage {
   takePicture(){
     this.cameraPreview.takePicture().then((data)=>{
       this.imageURL = 'data:image/jpeg;base64,' + data;
+      this.showInsole = true;
     })
   }
 
   loadP() {
     this.navCtrl.push(InsolePage);
   }
+
+
+  
 }
 
 

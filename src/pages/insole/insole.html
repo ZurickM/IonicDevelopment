@@ -33,13 +33,13 @@
 
   <button ion-button (click)="ifButton('E')" id="E">E</button>
 
+<div id="centeredbuttons">
+  <button  *ngIf="pageone" class="pro"(click)="nextPage()">OverPronation Page</button>   
 
-  <button ion-button round *ngIf="pageone" class="pro"(click)="nextPage()">OverPronation Page</button>
+  <button  *ngIf="pagetwo" class="pro"(click)="nextPageP()">UnderPronation Page</button>
 
-  <button ion-button round *ngIf="pagetwo" class="pro"(click)="nextPageP()">UnderPronation Page</button>
-
-  <button ion-button round *ngIf="pagethree"  class="pro" [navPush]="Home"> Normal Pronation</button>
-
+  <button  *ngIf="pagethree"  class="pro" [navPush]="Home"> Normal Pronation</button>
+</div>
 
 
    

@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar >
-    <ion-title>cameraPreview</ion-title>
+    <ion-title>Take Picture</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,9 +19,9 @@
        <button ion-button (click)=“takePicture()“>Take a Picture</button> -->
 
     <img src="{{imageURL}}">
-    <button ion-button (click)="takePicture()">Take Picture</button>
+    <button  (click)="takePicture()" id="takepicbutton">Take Picture</button>
 
-    <button ion-button (click)="loadP()">Next Page</button>
+    <button *ngIf="showInsole"  (click)="loadP()" id="nextpagebutton_">Next Page</button>
 
 </ion-content>
 

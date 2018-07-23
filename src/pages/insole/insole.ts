@@ -24,6 +24,7 @@ export class InsolePage {
   pagetwo = false;
   pagethree = false;
   selected = [];
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, cameraPreview: CameraPreview) {
     this.Home = HomePage;
   }
@@ -33,7 +34,7 @@ export class InsolePage {
   showAlert20() {
     const alert = this.alertCtrl.create({
     
-      subTitle: 'Tap two buttons that has your shoe imprint on it',
+      subTitle: 'Tap two or three buttons that has your shoe imprint on it',
       buttons: ['OK']
     });
     alert.present();
@@ -88,6 +89,16 @@ export class InsolePage {
           this.pagetwo = false;
           this.pagethree = true;
     }
+    if(this.selected.indexOf('B') != -1 && this.selected.indexOf('A') != -1 && this.selected.indexOf('D') != -1 && this.selected.length == 3){
+      this.pageone = false;
+      this.pagetwo = true;
+      this.pagethree = false;
+}
+if(this.selected.indexOf('B') != -1 && this.selected.indexOf('A') != -1 && this.selected.indexOf('C') != -1 && this.selected.length == 3){
+  this.pageone = true;
+  this.pagetwo = false;
+  this.pagethree = false;
+}
     
          
       
