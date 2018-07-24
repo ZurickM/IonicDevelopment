@@ -3,7 +3,7 @@
     <name>BlankIon</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://10.120.65.126:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -91,6 +91,8 @@
     <plugin name="cordova-plugin-camera-preview" spec="^0.10.0" />
     <allow-navigation href="http://10.120.65.126:8100" />
     <allow-navigation href="http://169.254.213.43:8100" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="7.0.0" />
     <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
     <preference name="orientation" value="portrait" />
     <allow-navigation href="http://169.254.190.73:8100" />
@@ -98,6 +100,5 @@
     <allow-navigation href="http://169.254.7.33:8100" />
     <allow-navigation href="http://169.254.46.81:8100" />
     <allow-navigation href="http://169.254.207.251:8100" />
-    <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="7.0.0" />
+    <allow-navigation href="http://169.254.189.160:8100" />
 </widget>

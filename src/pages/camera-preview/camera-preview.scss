@@ -3,7 +3,21 @@ page-camera-preview {
     ion-content{
         background-color: transparent !important;
       }
-   
+   .toolbar-background{
+       background: transparent !important;
+       border-bottom: solid 0.2px white !important;
+   }
+
+   .back-button{
+       color: white !important;
+   }
+   ion-content{
+       color: white !important;
+   }
+
+   .toolbar-title{
+       color: white !important;
+   }
 }
 
 #outline{
@@ -37,3 +51,9 @@ page-camera-preview {
   float: right;
 }
 
+
+#takepicbutton{
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+}

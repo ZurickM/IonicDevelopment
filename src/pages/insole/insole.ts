@@ -6,6 +6,7 @@ import { ProinfoPage } from '../proinfo/proinfo';
 import { UnderproPage } from '../underpro/underpro';
 import { analyzeAndValidateNgModules } from '../../../node_modules/@angular/compiler';
 import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
+import { DataProvider } from '../../providers/data/data';
 
 /**
  * Generated class for the InsolePage page.
@@ -24,8 +25,9 @@ export class InsolePage {
   pagetwo = false;
   pagethree = false;
   selected = [];
+  public foot;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, cameraPreview: CameraPreview) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, cameraPreview: CameraPreview, public dataProvider: DataProvider) {
     this.Home = HomePage;
   }
 
@@ -50,6 +52,9 @@ export class InsolePage {
 
 
   ionViewDidLoad() {
+    this.dataProvider.myData.subscribe((data) => {
+      this.foot = data[0];
+    })
     console.log('ionViewDidLoad InsolePage');
   }
 

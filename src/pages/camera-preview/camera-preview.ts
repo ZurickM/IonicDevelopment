@@ -5,6 +5,7 @@ import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, Camer
 
 
 import { InsolePage } from '../insole/insole';
+import { DataProvider } from '../../providers/data/data';
 /**
  * Generated class for the CameraPreviewPage page.
  *
@@ -28,7 +29,7 @@ export class CameraPreviewPage {
   showInsole: any;
   imageURL;
 
-  constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController, ) { 
+  constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController, public dataProvider:DataProvider ) { 
     this.showInsole = false;
   
   }
@@ -71,12 +72,18 @@ export class CameraPreviewPage {
     this.cameraPreview.takePicture().then((data)=>{
       this.imageURL = 'data:image/jpeg;base64,' + data;
       this.showInsole = true;
+
+      this.dataProvider.addData(this.imageURL);
+      this.navCtrl.push(InsolePage);
     })
+
+
   }
 
   loadP() {
     this.navCtrl.push(InsolePage);
   }
+
 
 
   

@@ -20,6 +20,7 @@ import { InsolePage } from '../pages/insole/insole';
 import { AngularCropperjsModule } from 'angular-cropperjs'
 import { CameraPreviewPage } from '../pages/camera-preview/camera-preview';
 import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
+import { DataProvider } from '../providers/data/data';
 
 
 
@@ -65,10 +66,12 @@ import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
     
   ],
   providers: [
+    DataProvider,
     StatusBar,
     SplashScreen, Camera,
     CameraPreview, 
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DataProvider
   ]
 })
 export class AppModule {}
