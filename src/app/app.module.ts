@@ -40,7 +40,9 @@ import { DataProvider } from '../providers/data/data';
     ProinfoPage,
     ShoeshowPage,
     UnderproPage,
-    PageshoePage
+    PageshoePage,
+    
+    
     
     
     
@@ -61,7 +63,9 @@ import { DataProvider } from '../providers/data/data';
     ProinfoPage,
     ShoeshowPage,
     UnderproPage,
-    PageshoePage
+    PageshoePage,
+    
+    
     
     
   ],

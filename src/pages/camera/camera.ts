@@ -4,6 +4,7 @@ import { HomePage } from '../home/home';
 import { InsolePage } from '../insole/insole';
 import { AngularCropperjsComponent } from '../../../node_modules/angular-cropperjs';
 import { CameraPreviewPage } from '../camera-preview/camera-preview';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 @IonicPage()
@@ -15,7 +16,7 @@ export class CameraPage {
   @ViewChild('angularCropper') public angularCropper: AngularCropperjsComponent;
   cropperOptions: any;
   croppedImage = null;
-
+  splash = true;
   myImage = null;
   scaleValX = 1;
   scalevalY = 1;
@@ -25,11 +26,8 @@ formPage;
 InsolePage: any;
 myphoto: any;
 showInsole:any;
-constructor(public navCtrl: NavController, public navParams: NavParams,private alertCtrl: AlertController, ) {
+constructor(public navCtrl: NavController, public navParams: NavParams,private alertCtrl: AlertController, private splashScreen: SplashScreen ) {
 
- 
-
-  
   this.pushPage = HomePage;
   this.formPage = HomePage;
   this.InsolePage= InsolePage;
@@ -44,17 +42,13 @@ constructor(public navCtrl: NavController, public navParams: NavParams,private a
     scalable: true,
     autoCropArea: .8,
   };
-  
-  
-
-
   console.log(navParams.get('val'));
 
   }
-
-
   
-  
+  ionViewDidLoad() {
+    setTimeout(() => this.splash = false, 4000);
+  }
   
   nextPage(){
     this.navCtrl.push(HomePage);

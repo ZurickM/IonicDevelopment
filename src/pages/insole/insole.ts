@@ -21,9 +21,9 @@ import { DataProvider } from '../../providers/data/data';
 })
 export class InsolePage {
   Home;
-  pageone = false;
-  pagetwo = false;
-  pagethree = false;
+  pageone = false; //Overpronation Page//
+  pagetwo = false; //Underpronation Page//
+  pagethree = false; //Normal Pronation//
   selected = [];
   public foot;
 
