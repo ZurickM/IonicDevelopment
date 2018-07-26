@@ -5,7 +5,11 @@ page-underpro {
 
 #colorhead{
     background-color: #446F8B;
+    color: white;
 }
+
+
+
 
 #buttonshoes{
     display: block;
@@ -19,4 +23,30 @@ page-underpro {
 
 #info{
     text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+
+}
+
+
+#white{
+    color: white;
+}
+
+#headeralign{
+    transform: translateX(20px)
+}
+
+#color{
+    color: white;
+}
+
+
+#img10{
+    width: 200px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }

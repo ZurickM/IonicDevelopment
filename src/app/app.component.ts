@@ -14,7 +14,7 @@ import { InsolePage } from '../pages/insole/insole';
 import { HomePage } from '../pages/home/home';
 import { CameraPreviewPage } from '../pages/camera-preview/camera-preview';
 import { PageshoePage } from '../pages/pageshoe/pageshoe';
-
+import { UnderproPage } from '../pages/underpro/underpro'
 
 @Component({
   templateUrl: 'app.html'

@@ -1,6 +1,6 @@
 
 import { Component } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular';
+import { NavController, Platform, AlertController  } from 'ionic-angular';
 import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
 
 
@@ -29,7 +29,7 @@ export class CameraPreviewPage {
   showInsole: any;
   imageURL;
 
-  constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController, public dataProvider:DataProvider ) { 
+  constructor(public platform: Platform, public cameraPreview: CameraPreview, public navCtrl: NavController, public dataProvider:DataProvider, private alertCtrl: AlertController) { 
     this.showInsole = false;
   
   }
@@ -86,7 +86,15 @@ export class CameraPreviewPage {
 
 
 
-  
+  showAlert20() {
+    const alert = this.alertCtrl.create({
+    
+      subTitle: 'Tap two to three buttons that has your shoe imprint on it',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
+
 }
 
 

@@ -6,6 +6,11 @@ page-home {
     text-align: center
 }
 
+#invisible{
+    background-color: white;
+    font-size: 10px
+}
+
 
 #img10{
     height: 300px;
@@ -18,6 +23,9 @@ page-home {
     font-size: 20px;
 }
 
+#titlecolor{
+    color: white;
+}
 
 #head2{
     background-color: #CEFF00;
@@ -40,5 +48,25 @@ page-home {
 
 #proInfo{
     margin: 30px auto;
+    text-align: justify;
+}
+
+#header{
+transform: translateX(20px);
+}
+
+
+#img10{
+    width: 200px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#infopro{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
     text-align: justify;
 }

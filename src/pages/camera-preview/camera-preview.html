@@ -10,18 +10,9 @@
 <ion-content padding>
     <img id="outline" src="./assets/imgs/background.png" alt="">
 
-    <!-- <ion-card>
-        <ion-card-content>
-          Latest Picture:
-          <img [src]=“base64Image” *ngIf=“base64Image” />
-        </ion-card-content>
-      </ion-card>
-       <button ion-button (click)=“takePicture()“>Take a Picture</button> -->
-<!-- 
-    <img src="{{imageURL}}"> -->
-    <button  (click)="takePicture()" id="takepicbutton">Take Picture</button>
+    <button  (click)="takePicture()" (click)="showAlert20()"     id="takepicbutton">Take Picture</button>
 
-    <!-- <button *ngIf="showInsole"  (click)="loadP()" id="nextpagebutton_">Next Page</button> -->
+  
 
 </ion-content>
 

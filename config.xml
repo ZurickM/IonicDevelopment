@@ -90,8 +90,6 @@
     <plugin name="cordova-plugin-camera-preview" spec="^0.10.0" />
     <allow-navigation href="http://10.120.65.126:8100" />
     <allow-navigation href="http://169.254.213.43:8100" />
-    <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="7.0.0" />
     <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
     <preference name="orientation" value="portrait" />
     <allow-navigation href="http://169.254.190.73:8100" />
@@ -103,4 +101,10 @@
     <allow-navigation href="http://169.254.71.46:8100" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <allow-navigation href="http://169.254.24.193:8100" />
+    <allow-navigation href="http://169.254.158.196:8100" />
+    <allow-navigation href="http://169.254.66.21:8100" />
+    <allow-navigation href="http://169.254.21.220:8100" />
+    <allow-navigation href="http://169.254.130.84:8100" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="7.0.0" />
 </widget>

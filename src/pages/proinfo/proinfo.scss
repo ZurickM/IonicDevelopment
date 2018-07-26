@@ -14,6 +14,21 @@ page-proinfo {
 #info{
     color: black;
     text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+#invisible{
+    color: white;
+}
+
+#headcolor{
+    color:white;
+}
+
+#headalign1{
+    transform: translateX(20px);
 }
 
 #button10{
@@ -25,6 +40,17 @@ page-proinfo {
     margin: 20px auto;
     height: 45px;
     
+
     
    
+}
+
+
+
+#img10{
+    width: 200px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
