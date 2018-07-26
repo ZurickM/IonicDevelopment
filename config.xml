@@ -3,7 +3,7 @@
     <name>BlankIon</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://192.168.0.17:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -107,4 +107,6 @@
     <allow-navigation href="http://169.254.130.84:8100" />
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="7.0.0" />
+    <allow-navigation href="http://10.27.15.242:8100" />
+    <allow-navigation href="http://169.254.130.94:8100" />
 </widget>
