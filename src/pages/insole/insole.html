@@ -19,7 +19,7 @@
  
 
 
-  <img id="overimage" src="./assets/imgs/insoleoutline2.png">
+  <img id="overimage" src="./assets/imgs/insoleoutline.png">
 
   <img id="photosize" [src]="foot" alt="">
 
@@ -35,9 +35,9 @@
   <button ion-button (click)="ifButton('E')" id="E">E</button>
 
 <div id="centeredbuttons">
-  <button  *ngIf="pageone" class="pro"(click)="nextPage()">OverPronation Page</button>   
+  <button  *ngIf="pageone" class="pro"(click)="nextPage()">OverPronation </button>   
 
-  <button  *ngIf="pagetwo" class="pro"(click)="nextPageP()">UnderPronation Page</button>
+  <button  *ngIf="pagetwo" class="pro"(click)="nextPageP()">UnderPronation </button>
 
   <button  *ngIf="pagethree"  class="pro" [navPush]="Home"> Normal Pronation</button>
 </div>

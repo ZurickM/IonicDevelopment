@@ -21,7 +21,7 @@ page-insole {
     margin-left: 30%;
     display: block;
     border-radius: 100px;
-    transform: translate(58px,-155px);
+    transform: translate(68px,-140px);
     font-size: 20px;
     color: black;
     background: transparent;
@@ -38,7 +38,7 @@ page-insole {
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(-37px,-240px);
+    transform: translate(-37px,-220px);
     font-size: 20px;
     color: black;
     background: transparent;
@@ -53,7 +53,7 @@ page-insole {
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(-40px,-520px);
+    transform: translate(-45px,-510px);
     font-size: 20px;
     color: black;
     background: transparent;
@@ -70,7 +70,7 @@ page-insole {
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(5px,-565px);
+    transform: translate(5px,-545px);
     font-size: 20px;
     background: transparent;
     color: black;
@@ -85,7 +85,7 @@ page-insole {
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(45px,-650px);
+    transform: translate(45px,-640px);
     font-size: 20px;
     color: black;
     background: transparent;
@@ -97,12 +97,13 @@ page-insole {
 .pro{
     
     margin-right: 10px;
-    margin-left: 140px;
+    margin-left: 80px;
     border-radius: 100px;
     background-color: #446F8B;
     font-size: 15px;
     height: 40px;
-    transform: translateY(-360px)
+    transform: translateY(-312px);
+    color: white
 
 }
 
@@ -140,7 +141,7 @@ page-insole {
     display: block;
     width: 180px;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 20px;
     transform: translateX(40%)
     
     
@@ -149,6 +150,6 @@ page-insole {
 
 #photosize{
      width: 100%;
-    height: 100%;
+    height: 90%;
    
 }

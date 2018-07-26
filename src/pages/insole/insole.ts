@@ -36,7 +36,7 @@ export class InsolePage {
   showAlert20() {
     const alert = this.alertCtrl.create({
     
-      subTitle: 'Tap two or three buttons that has your shoe imprint on it',
+      subTitle: 'Tap two or three buttons that hover over your foot imprint',
       buttons: ['OK']
     });
     alert.present();
