@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="ermes.io" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>BlankIon</name>
+    <name>Ermis</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
@@ -99,14 +99,20 @@
     <allow-navigation href="http://169.254.207.251:8100" />
     <allow-navigation href="http://169.254.189.160:8100" />
     <allow-navigation href="http://169.254.71.46:8100" />
-    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <allow-navigation href="http://169.254.24.193:8100" />
     <allow-navigation href="http://169.254.158.196:8100" />
     <allow-navigation href="http://169.254.66.21:8100" />
     <allow-navigation href="http://169.254.21.220:8100" />
     <allow-navigation href="http://169.254.130.84:8100" />
-    <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="7.0.0" />
     <allow-navigation href="http://10.27.15.242:8100" />
     <allow-navigation href="http://169.254.130.94:8100" />
+    <allow-navigation href="http://169.254.17.206:8100" />
+    <allow-navigation href="http://169.254.194.72:8100" />
+    <allow-navigation href="http://169.254.58.99:8100" />
+    <allow-navigation href="http://169.254.115.99:8100" />
+    <allow-navigation href="http://169.254.220.171:8100" />
+    <allow-navigation href="http://10.27.22.193:8100" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
 </widget>

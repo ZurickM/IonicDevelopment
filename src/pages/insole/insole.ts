@@ -4,8 +4,7 @@ import { HomePage } from '../home/home';
 
 import { ProinfoPage } from '../proinfo/proinfo';
 import { UnderproPage } from '../underpro/underpro';
-import { analyzeAndValidateNgModules } from '../../../node_modules/@angular/compiler';
-import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
+import { CameraPreview } from '@ionic-native/camera-preview';
 import { DataProvider } from '../../providers/data/data';
 
 /**

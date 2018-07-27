@@ -5,16 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 import { CameraPage } from '../pages/camera/camera';
-import { SecondPage } from '../pages/second/second';
-import { CameraPreview } from '../../node_modules/@ionic-native/camera-preview';
-import { ShoeshowPage } from '../pages/shoeshow/shoeshow';
-import { Camera } from '../../node_modules/@ionic-native/camera';
-import { ProinfoPage } from '../pages/proinfo/proinfo';
-import { InsolePage } from '../pages/insole/insole';
-import { HomePage } from '../pages/home/home';
-import { CameraPreviewPage } from '../pages/camera-preview/camera-preview';
-import { PageshoePage } from '../pages/pageshoe/pageshoe';
-import { UnderproPage } from '../pages/underpro/underpro'
+
 
 @Component({
   templateUrl: 'app.html'

@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
 import { NavController, Platform, AlertController  } from 'ionic-angular';
-import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
+import { CameraPreview,  CameraPreviewOptions,  } from '@ionic-native/camera-preview';
 
 
 import { InsolePage } from '../insole/insole';

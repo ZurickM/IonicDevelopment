@@ -4,7 +4,6 @@ import { HomePage } from '../home/home';
 import { InsolePage } from '../insole/insole';
 import { AngularCropperjsComponent } from '../../../node_modules/angular-cropperjs';
 import { CameraPreviewPage } from '../camera-preview/camera-preview';
-import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 @IonicPage()
@@ -26,7 +25,7 @@ formPage;
 InsolePage: any;
 myphoto: any;
 showInsole:any;
-constructor(public navCtrl: NavController, public navParams: NavParams,private alertCtrl: AlertController, private splashScreen: SplashScreen ) {
+constructor(public navCtrl: NavController, public navParams: NavParams,private alertCtrl: AlertController,  ) {
 
   this.pushPage = HomePage;
   this.formPage = HomePage;
