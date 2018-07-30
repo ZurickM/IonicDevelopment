@@ -1,21 +1,44 @@
-page-pageshoe {
+page-second {
+    
     background-color: white;
+
 }
 
 
-.aligns{
-    float: left;
-    width: 45%;
-    padding: 0px;
-}
 
-
-.alignshoe{
-    float: right;
-    width: 45%;
-    padding: 0px;
+#head{
+background-color:  #446F8B
 }
 
 #shoeswhite{
-    color: white;
+color: white;
+}
+
+
+.align{
+width:50%;
+display: inline-block;
+}
+
+#fat{
+display: flex;
+}
+
+#imgshoes{
+width: 45%;
+height: 50%;
+box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2),;
+}
+
+
+.marginstuff{
+margin-top: 30px;
+}
+#textright{
+color: black;
+padding-left: 20px
+}
+
+.bluetext{
+padding-left: 20px;
 }

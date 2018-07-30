@@ -16,28 +16,25 @@
 
 <ion-content padding>
 
- 
-
-
-  <img id="overimage" src="./assets/imgs/insoleoutline.png">
+  <img id="overimage" src="./assets/imgs/stencilletter.png">
 
   <img id="photosize" [src]="foot" alt="">
 
 
-  <button ion-button (click)="ifButton('A')" id="A">A</button>
+  <button ion-button (click)="ifButton('A')" id="A"><strong>A</strong></button>
 
-  <button ion-button (click)="ifButton('B')" id="B"  >B</button>
+  <button ion-button (click)="ifButton('B')" id="B"  ><strong>B</strong></button>
 
-  <button ion-button (click)="ifButton('C')" id="C">C</button>
+  <button ion-button (click)="ifButton('C')" id="C"><strong>C</strong></button>
 
-  <button ion-button (click)="ifButton('D')" id="D">D</button>
+  <button ion-button (click)="ifButton('D')" id="D"><strong>D</strong></button>
 
-  <button ion-button (click)="ifButton('E')" id="E">E</button>
+  <button ion-button (click)="ifButton('E')" id="E"><strong>E</strong></button>
 
 <div id="centeredbuttons">
-  <button  *ngIf="pageone" class="pro"(click)="nextPage()">OverPronation </button>   
+  <button  *ngIf="pageone" class="pro2"(click)="nextPage()">OverPronation </button>   
 
-  <button  *ngIf="pagetwo" class="pro"(click)="nextPageP()">UnderPronation </button>
+  <button  *ngIf="pagetwo" class="pro1"(click)="nextPageP()">UnderPronation </button>
 
   <button  *ngIf="pagethree"  class="pro" [navPush]="Home"> Normal Pronation</button>
 </div>

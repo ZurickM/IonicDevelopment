@@ -15,77 +15,80 @@ page-insole {
 
 
 #A{
-    height: 70px;
+    height: 90px;
     width: 10px;
     background-color: deepskyblue;
     margin-left: 30%;
     display: block;
     border-radius: 100px;
-    transform: translate(68px,-140px);
+    transform: translate(53px,-150px);
     font-size: 20px;
     color: black;
-    background: transparent;
+    background: transparent
 
 }
 
 
 
 #B{
-    height: 60px;
+    height: 70px;
     width: 10px;
     background-color: deepskyblue;
     margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(-37px,-220px);
+    transform: translate(-40px,-230px);
     font-size: 20px;
     color: black;
     background: transparent;
+
 }
 
 
 #C{
-    height: 55px;
-    width: 35px;
+    height: 85px;
+    width: 45px;
     background-color: deepskyblue;
     margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(-45px,-510px);
+    transform: translate(-48px,-550px);
     font-size: 20px;
     color: black;
     background: transparent;
+
 
 }
 
 
 
 #D{
-    height: 50px;
-    width: 25px;
+    height: 60px;
+    width: 75px;
     background-color: deepskyblue;
     margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(5px,-545px);
+    transform: translate(-6px,-565px);
     font-size: 20px;
-    background: transparent;
     color: black;
+    background: transparent;
+
 }
 
 
 #E{
-    height: 55px;
-    width: 35px;
+    height: 80px;
+    width: 65px;
     background-color: deepskyblue;
     margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 100px;
-    transform: translate(45px,-640px);
+    transform: translate(35px,-710px);
     font-size: 20px;
     color: black;
     background: transparent;
@@ -102,7 +105,31 @@ page-insole {
     background-color: #446F8B;
     font-size: 15px;
     height: 40px;
-    transform: translateY(-312px);
+    transform: translateY(-406px);
+    color: white
+
+}
+.pro1{
+    
+    margin-right: 10px;
+    margin-left: 89px;
+    border-radius: 100px;
+    background-color: #446F8B;
+    font-size: 15px;
+    height: 40px;
+    transform: translateY(-406px);
+    color: white
+
+}
+.pro2{
+    
+    margin-right: 10px;
+    margin-left: 90px;
+    border-radius: 100px;
+    background-color: #446F8B;
+    font-size: 15px;
+    height: 40px;
+    transform: translateY(-406px);
     color: white
 
 }
@@ -139,10 +166,12 @@ page-insole {
 
 #overimage{
     display: block;
-    width: 180px;
+    width: 160px;
     position: absolute;
-    margin-top: 20px;
-    transform: translateX(40%)
+    margin-top: 50px;
+    transform: translateX(50%);
+    
+    height: 370px;
     
     
 }
